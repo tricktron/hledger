@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#! /usr/bin/env nix-shell
+#! nix-shell --system x86_64-darwin -i bash -p python3 hledger pandoc wkhtmltopdf-bin envsubst gnused gawk coreutils
 # shellcheck disable=SC2016
 # Create invoices with hledger and pandoc.
 # cf hledger/examples/invoicing, https://hledger.org/invoicing.html, https://martinbetz.eu/articles/pandoc-invoices
