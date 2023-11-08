@@ -99,3 +99,6 @@ hledger-web/yesod-devel/
 /checks
 /headroom-templates
 .headroom.yaml
+
+.DS_Store
+examples/invoicing/**/*.pdf
