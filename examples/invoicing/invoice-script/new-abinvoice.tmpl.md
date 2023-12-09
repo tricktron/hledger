@@ -8,7 +8,7 @@ margin-bottom: 36.7mm
 
 :::left
 # Rechnung
-<span style="color:#FF3B30;">No<sup>o</sup> 23-10</span> | $DAY, $MONTH, $YEAR | Fällig: 28.11.2023
+<span style="color:#FF3B30;">No<sup>o</sup> 23-11</span> | $DAY.$MM.$YEAR | Fällig: 28.12.2023
 :::
 
 
@@ -26,8 +26,8 @@ Sihleggstrasse 23\
 :::items
 | Beschreibung          | Stunden (Gemäss Bexio) | Preis in CHF  | Betrag in CHF |
 |:--------------------- |:-----------------------|:--------------|:--------------|
-| BIT Beratung          | 61.5                   | 130           |     7995      |
-| BLS Beratung          | 32.5                   | 135           |     4387.5    |
+| BIT Beratung          | 155                    | 130           |     20150     |
+| BLS Beratung          |  20                    | 135           |      2700     |
 | &nbsp;                |                        |               |               |
 | Zwischensumme         |                        |               |    $FIXEDEXPS |
 | Mwst. (7.7%)          |                        |               |    $MWST      |
