@@ -68,7 +68,7 @@ TIMEACCT="${ARGS[1]:-$DEFTIMEACCT}"
 EXPACCT="${ARGS[2]:-$DEFEXPACCT}"
 
 # XXX FIXEDEXPS and RATE here, and printf widths below, must be kept synced with TEMPLATE
-FIXEDEXPS=$(python3 -c "print(sum([ 20150, 2700 ]))")
+FIXEDEXPS=$(python3 -c "print(sum([ 14105 , 573.75 ]))")
 RATE=444
 TIMELOG=./time.timedot
 #
@@ -124,8 +124,10 @@ REV=$(python3 -c "print(sum([ $FIXEDEXPS, $AMT ]))")
 REV=$(printf %5s "$REV")
 FIXEDEXPS=$(printf %.2f "$FIXEDEXPS")
 MWST=$(python3 -c "print($FIXEDEXPS * 0.077)")
+MWST=$(python3 -c "print(0.05 * round($MWST / 0.05))")
 MWST=$(printf %.2f "$MWST")
 TOT=$(python3 -c "print(sum([ $FIXEDEXPS, $MWST ]))")
+TOT=$(python3 -c "print(0.05 * round($TOT / 0.05))")
 TOT=$(printf %.2f "$TOT")
 export  YEAR  MONTH  MM  DAY  LMM  LM  HRS  AMT  REV  EXP  TOT FIXEDEXPS MWST
 
